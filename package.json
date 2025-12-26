@@ -1,0 +1,38 @@
+{
+  "name": "mid-app",
+  "version": "1.0.0",
+  "description": "Marathon International de Douala - Complete Event Management Platform",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "mobile",
+    "dashboard"
+  ],
+  "scripts": {
+    "backend": "npm run dev --workspace=backend",
+    "mobile": "npm run start --workspace=mobile",
+    "dashboard": "npm run dev --workspace=dashboard",
+    "install:all": "npm install && npm install --workspace=backend && npm install --workspace=mobile && npm install --workspace=dashboard",
+    "clean": "npm run clean --workspaces",
+    "lint": "npm run lint --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "keywords": [
+    "marathon",
+    "douala",
+    "cameroon",
+    "event-management",
+    "gps-tracking",
+    "mobile-payment"
+  ],
+  "author": "Marathon International de Douala",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Franck-F/MID-APP.git"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}
